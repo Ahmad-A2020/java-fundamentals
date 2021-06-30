@@ -108,7 +108,7 @@ public class Library {
         return targetArray;
 
     }
-     public static void Maps ( int [] [] tempArray){
+    public static void Maps ( int [] [] tempArray){
         Set<Integer> uniqueTempreature = new HashSet<>();
         for (int [] array:tempArray ){
             for (int item: array){
@@ -118,14 +118,14 @@ public class Library {
         }
         int min= Collections.min(uniqueTempreature);
         int max= Collections.max(uniqueTempreature);
-         System.out.println("High: "+max);
-         System.out.println("Low: "+min);
-         for (int i=min; i<max; i++){
-             if ( !uniqueTempreature.contains(i)){
-                 System.out.println("Never saw temperature: "+i);
-             }
-         }
-     }
+        System.out.println("High: "+max);
+        System.out.println("Low: "+min);
+        for (int i=min; i<max; i++){
+            if ( !uniqueTempreature.contains(i)){
+                System.out.println("Never saw temperature: "+i);
+            }
+        }
+    }
     public static String tally ( List<String>  votesArray){
         int bushVotes=0;
         int ShrubVotes=0;
