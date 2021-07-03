@@ -36,7 +36,12 @@ public class Library {
                 {55, 54, 60, 53, 59, 57, 61},
                 {65, 56, 55, 52, 55, 62, 57}
         };
-        System.out.println("the first item of the lowest average array is : "+lowestArrayAverage(weeklyMonthTemperatures)[0]);
+        int index =0;
+        for (int item:lowestArrayAverage(weeklyMonthTemperatures)){
+            System.out.println("item "+ index+ ":"+item);
+            index +=1;
+
+        }
         // lab 03 Maps methods
 
         Maps(weeklyMonthTemperatures);
