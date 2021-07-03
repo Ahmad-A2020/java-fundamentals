@@ -12,7 +12,7 @@ public class App {
 
         System.out.println(new App().getGreeting());
         try{
-            File myFile = new File("index.js");
+            File myFile = new File("C:\\Users\\Ahmad\\asac\\401Course\\java-fundamentals\\linter\\src\\main\\java\\index.js");
             Scanner myReader = new Scanner(myFile);
             int counter =0;
             while (myReader.hasNextLine()){
