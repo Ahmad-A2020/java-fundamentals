@@ -18,6 +18,7 @@ public class App {
             while (myReader.hasNextLine()){
                 String line = myReader.nextLine();
 //                System.out.println(line);
+                counter +=1;
                 if (line=="" || line.contains("{")|| line.contains("}")|| line.contains("if") || line.contains("else")){
                     continue;
                 }else if( line.endsWith(";")) {
@@ -26,7 +27,7 @@ public class App {
                     System.out.println("Line "+counter+" : Missing semicolon.");
 
                 }
-                counter +=1;
+
             }
             myReader.close();
 

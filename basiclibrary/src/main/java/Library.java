@@ -70,7 +70,12 @@ public class Library {
         array = new int[n];
 
         for (int i=0; i<n;i++){
+
             int rand= randValue.nextInt(6);
+            while (rand ==0){
+                 rand= randValue.nextInt(6);
+            }
+
             array[i]=rand;
         }
         return array;
