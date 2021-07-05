@@ -1,4 +1,4 @@
-package Restaurant;
+package Library;
 
 public class Review {
     private String body;
@@ -38,8 +38,8 @@ public class Review {
 
     @Override
     public String toString() {
-        return "Review on the Restaurant Service: {" +
-                "comment='" + body + '\'' +
+        return "Review:{" +
+                "comment:'" + body + '\'' +
                 ", By:'" + author + '\'' +
                 ", Evaluation Stars Num=" + starsNum +
                 '}';
